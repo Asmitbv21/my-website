@@ -17,6 +17,15 @@ body {
     border-radius: 8px;
 }
 
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head h3 {
+    background-color: black;
+}
 .login-box h1 {
     margin-bottom: 10px;
     font-size: 24px;

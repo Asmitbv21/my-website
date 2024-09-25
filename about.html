@@ -1,149 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Savor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('WhatsApp Image 2024-07-30 at 6.51.48 PM.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        .container {
-            display: flex;
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .image-section {
-            flex: 1;
-            background-image: url('about.jpg');
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-        .text-section {
-            flex: 1;
-            padding: 20px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        .text-section h1 {
-            font-size: 2em;
-            margin: 0;
-            color: rgb(206, 14, 110);
-        }
-        .text-section h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-            color: #8b4513;
-        }
-        .text-section p {
-            font-size: 1em;
-            color: #333;
-            font-family: "YourCalligraphyFont", sans-serif;
-        }
-
-        /* Footer Styling */
-        .footer {
-            margin-top: 30px;
-            background-image: url('WhatsApp Image 2024-07-30 at 6.51.48 PM.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            padding: 40px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contact-card {
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-        }
-
-        .contact-header {
-            margin-bottom: 20px;
-        }
-
-        .icon {
-            position: relative;
-        }
-
-        .bubble {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-color: #ffccd5;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 20px;
-            font-size: 14px;
-            color: white;
-        }
-
-        .bubble1 {
-            background-color: #7ec8e3;
-            margin-right: 5px;
-        }
-
-        .contact-header h1 {
-            font-size: 24px;
-            color: #dd5c82;
-        }
-
-        .contact-info .contact-item {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-        }
-
-        .contact-info .icon {
-            font-size: 24px;
-            color: #7ec8e3;
-            margin-right: 10px;
-        }
-
-        .contact-info .text {
-            font-size: 16px;
-            color: #333;
-        }
-    </style>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style_about.css">
 </head>
+
 <body>
-
-    <!-- Main Content Section -->
-    <div class="container">
-        <div class="image-section"></div>
-        <div class="text-section">
-            <h1>WELCOME TO SWEET SAVOR</h1>
-            <h2>ABOUT US</h2>
-            <p>WE PROVIDE A WIDE RANGE OF DELICIOUS DESSERT RECIPES FROM AROUND THE WORLD, PERFECT FOR BAKERS OF ALL LEVELS. OUR EASY-TO-FOLLOW RECIPES AND EXPERT-CRAFTED PAID COURSES MAKE BAKING FUN AND REWARDING. JOIN US TO MAKE EVERY MOMENT SWEETER WITH SWEET SAVOR.</p>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <div class="contact-card">
-            <div class="contact-header">
-                <div class="icon">
-                    <span class="bubble bubble1">...</span>
-                    <span class="bubble bubble2">...</span>
-                </div>
-                <h1>Contact us</h1>
+    <nav class="navbar">
+        <a href="Home.html" style="text-decoration:none;">
+            <img src="logo.png" alt="logo" class="logo">
+            <h1>Sweet Savor</h1>
+        </a>
+        <div class="nav-links">
+            <div class="srch_br">
+                <input type="text" placeholder="Search Recipes..">
+                <img src="search.png" alt="Bucket Icon">
             </div>
+            <div class="icon-container">
+                <!-- Home Icon -->
+                <a href="Home.html">
+                    <img src="home.png" alt="Bucket Icon" class="responsive-icon">
+                </a>
+                <!-- Shopping icon -->
+                <a href="shopping.html">
+                    <img src="cart.png" alt="Bucket Icon" class="responsive-icon">
+                </a>
+                <!-- WhatsApp icon -->
+                <a href="whatsapp://send?text=Check%20out%20this%20cool%20website!">
+                    <img src="whatsapp.png" alt="Share Icon" class="responsive-icon">
+                </a>
+                <!-- <a href="javascript:void(0)" id="login-btn">
+                    <div class="login_btn">
+                        <p>Login/Sign Up</p>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+        <!-- Hamburger Icon (Menu Button) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="menu.png" alt="Menu Icon" class="responsive-icon">
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- Main Content Section -->
+        <div class="container">
+            <div class="image-section">
+                <img src="left_img.jpg" alt="Image 1">
+            </div>
+            <div class="text-section">
+                <h1>ABOUT US</h1>
+                <h2>WELCOME TO SWEET SAVOR</h2>
+                <p>WE PROVIDE A WIDE RANGE OF DELICIOUS DESSERT RECIPES FROM AROUND THE WORLD, PERFECT FOR BAKERS OF
+                    ALL
+                    LEVELS. OUR EASY-TO-FOLLOW RECIPES AND EXPERT-CRAFTED PAID COURSES MAKE BAKING FUN AND
+                    REWARDING. JOIN
+                    US TO MAKE EVERY MOMENT SWEETER WITH SWEET SAVOR.</p>
+            </div>
+        </div>
+
+        <div class="contact_us">
+            <!-- Left section with avatars -->
+            <div class="left-section">
+            </div>
+
+            <!-- Right section with form -->
+            <div class="right-section">
+                <h1>Contact Us</h1>
+                <p>Reach out and we'll get in touch within 24 hours.</p>
+
+                <form action="mailto:your_email@example.com" method="post">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="team-size">Team Size:</label>
+                    <select id="team-size" name="team-size">
+                        <option value="1-50">1-50 people</option>
+                        <option value="51-100">51-100 people</option>
+                    </select>
+
+                    <label for="location">Location:</label>
+                    <select id="location" name="location">
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="contact-card">
             <div class="contact-info">
                 <div class="contact-item">
                     <span class="icon">&#x1F4DE;</span>
@@ -162,8 +122,21 @@
                     <span class="text">123 Anywhere St., Any City, ST 12345</span>
                 </div>
             </div>
+            <div class="social">
+                <img src="Icon/Facebook (Phone).png" alt="facebook">
+                <img src="Icon/Instagram (Phone).png" alt="Instagram">
+                <img src="Icon/Tiktok (Phone).png" alt="Tiktok">
+                <img src="Icon/Youtube (Phone).png" alt="Youtube">
+            </div>
         </div>
     </div>
-
 </body>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open');
+    }
+</script>
+
+
 </html>

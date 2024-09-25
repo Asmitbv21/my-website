@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Savor Recipes</title>
     <link rel="stylesheet" href="styl5.css">
 </head>
+
 <body>
+    <nav class="navbar">
+        <a href="Home.html" style="text-decoration:none;">
+            <img src="logo.png" alt="logo" class="logo">
+            <h1>Sweet Savor</h1>
+        </a>
+        <div class="nav-links">
+            <div class="srch_br">
+                <input type="text" placeholder="Search Recipes..">
+                <img src="search.png" alt="Bucket Icon">
+            </div>
+            <div class="icon-container">
+                <!-- Home Icon -->
+                <a href="Home.html">
+                    <img src="home.png" alt="Bucket Icon" class="responsive-icon">
+                </a>
+                <!-- Shopping icon -->
+                <a href="shopping.html">
+                    <img src="cart.png" alt="Bucket Icon" class="responsive-icon">
+                </a>
+                <!-- WhatsApp icon -->
+                <a href="whatsapp://send?text=Check%20out%20this%20cool%20website!">
+                    <img src="whatsapp.png" alt="Share Icon" class="responsive-icon">
+                </a>
+                <!-- <a href="javascript:void(0)" id="login-btn">
+                    <div class="login_btn">
+                        <p>Login/Sign Up</p>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+        <!-- Hamburger Icon (Menu Button) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="menu.png" alt="Menu Icon" class="responsive-icon">
+        </div>
+    </nav>
+
     <h1>Welcome to Sweet Savor Recipes</h1>
     <div class="recipe-container">
         <!-- Recipe 1: Chocolate Chip Cookies -->
@@ -108,8 +146,21 @@
         </div>
     </div>
 
-    <script src="script2.js"></script>
 </body>
+<script>
+    button.addEventListener('click', function () {
+        var targetId = this.getAttribute('data-target');
+        var ingredientsList = document.getElementById(targetId);
+        if (ingredientsList.style.display === 'none') {
+            ingredientsList.style.display = 'block';
+        } else {
+            ingredientsList.style.display = 'none';
+        }
+    });
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open');
+    }
+</script>
+
 </html>
-
-

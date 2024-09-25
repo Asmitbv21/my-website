@@ -1,16 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="sty4.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7ecb, #6a93ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .login-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head {
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Adjusted for mobile view */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .head h3 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .head a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .head h3 {
+            background-color: #ff97fd;
+            color: rgb(0, 0, 0);
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center; /* Center the text */
+            width: max-content; /* Make it full width */
+        }
+
+        .head h3:hover {
+            background-color: #ff97fd;
+        }
+
+        .login-box h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .login-box p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #ff97fd;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background: #5c00cc;
+        }
+
+        .login-box a {
+            color: #7e00ff;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 480px) {
+            .head h1 {
+                font-size: 20px; /* Smaller heading for mobile */
+            }
+
+            .head h3 {
+                font-size: 16px; /* Adjust size for the button */
+            }
+
+            .login-box h1 {
+                font-size: 20px; /* Adjust heading size */
+            }
+
+            .btn {
+                font-size: 14px; /* Smaller button text */
+            }
+
+            .input-group input {
+                font-size: 14px; /* Adjust input text size */
+            }
+
+            .container{
+                height: 100vh;
+                border-radius: 0px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div class="login-box">
-            <h1>Welcome Back</h1>
-            <p>Enter your credentials to login</p>
+            <div class="head">
+                <h3><a href="Home.html">Home</a></h3>
+                <div>
+                    <h1>Welcome Back</h1>
+                    <p>Enter your credentials to login</p>
+                </div>
+            </div>
             <form>
                 <div class="input-group">
                     <input type="text" id="username" placeholder="Username" required>
@@ -19,11 +166,11 @@
                     <input type="password" id="password" placeholder="Password" required>
                 </div>
                 <button type="submit" class="btn">Login</button>
-                
+
                 <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
             </form>
         </div>
     </div>
 </body>
-</html>
 
+</html>

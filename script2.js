@@ -1,5 +1,5 @@
 document.querySelectorAll('.toggle-button').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         var targetId = this.getAttribute('data-target');
         var ingredientsList = document.getElementById(targetId);
         if (ingredientsList.style.display === 'none') {
